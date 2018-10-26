@@ -1,0 +1,11 @@
+#test ul {
+    color: #c02727;
+}
+
+#test li {
+    color: #6121da;
+}
+
+#test ul>li {
+    color: #13e913;
+}
