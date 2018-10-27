@@ -1,11 +1,17 @@
-.test ul {
-    color: #c02727;
+header {
+    background-color: #c46308;
+    text-align: center;
 }
 
-.test li {
-    color: #6121da;
+main {
+    width: 800px;
+    margin: auto;
 }
 
-.test ul>li {
-    color: #13e913;
+.setright {
+    display:inline;
+}
+
+.setright img {
+    width:300px;
 }
