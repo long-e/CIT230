@@ -10,10 +10,10 @@ main {
 }
 
 .setright {
-    display:inline;
+    display:inline-block;
 }
 
-.setright img {
+img.setright {
     width: 300px;
     transform: rotate(90deg);
 }
