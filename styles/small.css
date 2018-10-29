@@ -1,0 +1,25 @@
+@media only screen and (max-width:750px) {
+    main {
+        width: 100%;
+        margin: auto;
+        padding: 5px;
+        clear:both;
+    }
+
+    .first {
+        width:100%;
+        display:block;
+    }
+    
+    .second {
+        width:100%;
+        display:block;
+    }
+
+    .second img {
+        float: none;
+        width: 300px;
+        transform: rotate(-90deg);
+        object-fit: contain;
+    }
+}
