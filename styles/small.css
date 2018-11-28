@@ -14,12 +14,11 @@
     .second {
         width:100%;
         display:block;
+        text-align:center;
     }
 
     .second img {
         float: none;
-        width: 300px;
-        transform: rotate(-90deg);
-        object-fit: contain;
+        margin: auto;
     }
 }
