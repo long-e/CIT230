@@ -3,8 +3,9 @@ body{
     margin:0px;
 }
 
-header {
+header, footer {
     background-color: #1a2055;
+    color: whitesmoke;
     text-align: center;
     display:block;
     width:100%;
@@ -29,31 +30,7 @@ main {
     clear:both;
 }
 
-.first {
-    width:60%;
-    display:inline-block;
-}
-
-.second {
-    width:40%;
-    float:right;
-}
-
-.second img {
+img {
     float:right;
     width: 300px;
-    transform: rotate(-90deg);
-    object-fit: contain;
-}
-
-
-table, th, td {
-    border: 1px solid gray;
-    border-collapse: collapse;
-    text-align: center;
-    padding: 5px;
-}
-
-thead>td {
-    background-color: blueviolet;
 }
