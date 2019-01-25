@@ -19,14 +19,14 @@ weatherRequest.onload= function() {
     var weatherData = JSON.parse(weatherRequest.response);
     console.log(weatherData);
     document.getElementById("deg").innerHTML= weatherData.main.temp;
-    document.getElementById("current-condition").innerHTML= weatherData.weather[0].main;
-    document.getElementById("current-condition1").innerHTML= weatherData.weather[0].main;
-    document.getElementById("humidity").innerHTML= weatherData.main.humidity;
-    document.getElementById("mph").innerHTML= weatherData.wind.speed;
+    //document.getElementById("current-condition").innerHTML= weatherData.weather[0].main;
+    //document.getElementById("current-condition1").innerHTML= weatherData.weather[0].main;
+    //document.getElementById("humidity").innerHTML= weatherData.main.humidity;
+    //document.getElementById("mph").innerHTML= weatherData.wind.speed;
 
-    var iconcode=weatherData.weather[0].icon;
-    var icon_path= "https://openweathermap.org/img/w/"+ iconcode + ".png";
-    document.getElementById("weather_icon").src= icon_path;
+    //var iconcode=weatherData.weather[0].icon;
+    //var icon_path= "https://openweathermap.org/img/w/"+ iconcode + ".png";
+    //document.getElementById("weather_icon").src= icon_path;
 
     };
 
