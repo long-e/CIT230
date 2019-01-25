@@ -9,7 +9,7 @@ header, footer {
     text-align: center;
     display:block;
     width:100%;
-    min-height: 100px;
+    min-height: 80px;
     margin-top:0px;
     padding: 10px;
 }
@@ -22,15 +22,16 @@ header>h2 {
     margin-bottom:0px;
 }
 
+img {
+    float:right;
+    width: 300px;
+}
+
 main {
     width: 800px;
     margin: auto;
     padding: 5px;
     color: black;
+    min-height: 100%;
     clear:both;
-}
-
-img {
-    float:right;
-    width: 300px;
 }
