@@ -7,30 +7,31 @@ html, body {
 header, footer {
     background-color: #9ba0bc;
     text-align: center;
-    display:block;
+    display: block;
     width:100%;
     min-height: 80px;
     margin-top:0px;
     padding: 10px;
+    box-sizing: border-box;
 }
 
 header>h1 {
-    margin-top:0px;
+    margin-top: 0px;
 }
 
 img {
-    float:right;
-    height: 550px;
+    width: 60vw;
     padding: 20px;
 }
 
 main {
-    width: 800px;
+    width: 100vw;
+    max-width: 800px;
     margin: auto;
     padding: 5px;
     color: black;
-    min-height: 700px;
     clear:both;
+    box-sizing: border-box;
 }
 
 @media only screen and (max-width:600px) {
