@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p>Current Weather: <span id="current"></span></p>
+        <table style="border: 1px solid black; width:800px; padding:2px;">
+            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+            <tr><td id="c1"></td><td id="c2"></td><td id="c3"></td><td id="c4"></td><td id="c5"></td></tr>
+        </table>
+            <script>
+                var currentRequest= new XMLHttpRequest();
+                var apiURL= "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=cfb50cc654c2297a74afd727ffbac9e0";
+
+                currentRequest.open("GET",apiURL,true);
+                currentRequest.responseType= "text";
+                currentRequest.send();
+
+                currentRequest.onload= function() {
+                    var currentData = JSON.parse(currentRequest.response);
+                    console.log(currentData);
+   
+                    document.getElementById("current").innerHTML= currentData.main.temp;
+                }
+                    
+                
+
+                    var weatherRequest= new XMLHttpRequest();
+                    var apiURL= "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=cfb50cc654c2297a74afd727ffbac9e0";
+        
+                    weatherRequest.open("GET",apiURL,true);
+                    weatherRequest.responseType= "text";
+                    weatherRequest.send();
+        
+                    weatherRequest.onload= function() {
+                        var weatherData = JSON.parse(weatherRequest.response);
+                        console.log(weatherData);
+                        var count = 0;
+                        var name = "";
+                        for (var x=0; x<weatherData.list.length; x++){
+                            var forecast_dt = weatherData.list[x].dt_txt;
+        
+                            if (forecast_dt.includes('18:00:00')) {
+                                count += 1;
+                                name = "c" + count;
+                                document.getElementById(name).innerHTML = weatherData.list[x].main.temp;
+                            }
+
+                        }
+                    }
+            </script>
+    </body>
+</html>

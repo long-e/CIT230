@@ -1,24 +1,16 @@
 @media only screen and (max-width:750px) {
+    body {
+        grid-template-rows: 100px 1fr 80px;
+        grid-template-columns: 160px 1fr;
+        grid-template-areas: 
+            'header header'
+            'nav main'
+            'footer footer';
+    }
+
     main {
-        width: 100%;
-        margin: auto;
-        padding: 5px;
-        clear:both;
-    }
-
-    .first {
-        width:100%;
-        display:block;
-    }
-    
-    .second {
-        width:100%;
-        display:block;
-        text-align:center;
-    }
-
-    .second img {
-        float: none;
-        margin: auto;
+        grid-template-areas:
+            'a a'
+            'b c';
     }
 }

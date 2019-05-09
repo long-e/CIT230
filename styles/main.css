@@ -1,41 +1,57 @@
 /* Main CSS */
+* {
+    box-sizing: border-box;
+    padding: 10px;
+}
+
 html, body {
     margin:0px;
     height:100%;
+    padding:0px;
 }
 
-header, footer {
-    background-color: #9ba0bc;
-    text-align: center;
-    display: block;
-    width:100%;
-    min-height: 80px;
-    margin-top:0px;
-    padding: 10px;
-    box-sizing: border-box;
+header {
+    grid-area: header;
+    background-color: #5bc0ce;
+    color: #2f4858;
 }
 
-header>h1 {
-    margin-top: 0px;
+nav {
+    grid-area: nav;
+    background-color: #2f4858;
+    color: #f7fff6;
 }
 
-img {
-    width: 60vw;
-    padding: 20px;
+#div1, #div2, #div3 {
+    border: #2f4858 solid 3px;
 }
+
+#div1 { grid-area: a; }
+#div2 { grid-area: b; }
+#div3 { grid-area: c; }
 
 main {
-    width: 100vw;
-    max-width: 800px;
-    margin: auto;
-    padding: 5px;
-    color: black;
-    clear:both;
-    box-sizing: border-box;
+    grid-area: main;
+    background-color: #f7fff6;
+    display:grid;
+    grid-gap: 20px;
+    grid-template-areas: 'a b'
+        'a c';
 }
 
-@media only screen and (max-width:600px) {
-    header, footer {
-        background-color: #A9DDD6;
-    }
+footer {
+    grid-area: footer;
+    background-color: #5bc0ce;
+    color: #2f4858;
+    text-align: center;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 100px 40px 1fr 80px;
+    grid-template-areas:
+        'header'
+        'nav'
+        'main'
+        'footer';
 }
