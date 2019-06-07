@@ -30,6 +30,10 @@ nav {
 #div2 { grid-area: b; }
 #div3 { grid-area: c; }
 
+#div1 img {
+    width:200px;
+}
+
 main {
     grid-area: main;
     background-color: #f7fff6;

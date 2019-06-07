@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="JavaScript Examples">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>JavaScript Examples</title>
+    <link href="styles/main.css" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body>
+    <header>
+        <h1>JavaScript Examples</h1>
+    </header>
+    <main>
+        <div>
+            <h3>Calculate the hypotenuse (use JS on click):</h3>
+            Side #1 (a) = <input type="text" id="a" size="3">      Side #2 (b) = <input type="text" id="b" size="3"><br><br>
+            Hypotenuse (c)= <span id="c"></span><br><br>
+            <span class="calc" onclick="getHypotenuse()">Calculate</span>
+        </div>
+
+        <div>
+            <h3>Calculating the area of a triangle (automatically run on page load):</h3>
+            <p>Given a right triangle, if the a equals <span id="aa">5</span> and b equals <span id="bb">3</span>
+                 then the area of the triangle is <span id="area"></span></p>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; 2019 | Emily Long | BYU-Idaho</p>
+    </footer>
+    <script src="js/calc.js"></script>
+</body>
+
+</html>

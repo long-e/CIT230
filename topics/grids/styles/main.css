@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+html, body {
+    margin:0px;
+    height:100%;
+    padding:0px;
+}
+
+header {
+    background-color: #5bc0ce;
+    color: #2f4858;
+}
+
+main {
+    background-color: #f7fff6;
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+}
+
+footer {
+    background-color: #5bc0ce;
+    color: #2f4858;
+    text-align: center;
+}
+
+figure {
+    text-align: center;
+    margin:auto;
+}
+
+figure img {
+    width: 100%
+}
+
+@media only screen and (max-width:600px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
