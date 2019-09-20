@@ -5,6 +5,8 @@
     </head>
     <body>
         <p>Current Weather: <span id="current"></span></p>
+        <p>Current High: <span id="high"></span></p>
+        <p>Current Low: <span id="low"></span></p>
         <table style="border: 1px solid black; width:800px; padding:2px;">
             <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
             <tr><td id="c1"></td><td id="c2"></td><td id="c3"></td><td id="c4"></td><td id="c5"></td></tr>
@@ -12,6 +14,8 @@
             <script>
                 var currentRequest= new XMLHttpRequest();
                 var apiURL= "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=cfb50cc654c2297a74afd727ffbac9e0";
+                //-- preston 5604473
+                //-- london 2643743
 
                 currentRequest.open("GET",apiURL,true);
                 currentRequest.responseType= "text";
@@ -22,6 +26,8 @@
                     console.log(currentData);
    
                     document.getElementById("current").innerHTML= currentData.main.temp;
+                    document.getElementById("high").innerHTML= currentData.main.temp_max;
+                    document.getElementById("low").innerHTML= currentData.main.temp_min;
                 }
                     
                 

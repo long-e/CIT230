@@ -1,0 +1,36 @@
+/* Main CSS */
+* {
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+html, body {
+    margin:0px;
+    height:100%;
+    padding:0px;
+}
+
+header {
+    background-color: #5bc0ce;
+    color: #2f4858;
+}
+
+nav {
+    background-color: #2f4858;
+    color: #f7fff6;
+}
+
+main {
+    background-color: #f7fff6;
+}
+
+footer {
+    background-color: #5bc0ce;
+    color: #2f4858;
+    text-align: center;
+}
+
+.calc {
+    padding: 5px;
+    background-color: lightgrey;
+}
