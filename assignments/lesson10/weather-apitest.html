@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <meta name="description" content="Text...">
     </head>
     <body>
         <p>Current Weather: <span id="current"></span></p>
@@ -12,10 +12,13 @@
             <tr><td id="c1"></td><td id="c2"></td><td id="c3"></td><td id="c4"></td><td id="c5"></td></tr>
         </table>
             <script>
+
+                document.querySelector('meta[name=description]').setAttribute('content', document.querySelector('meta[name=description]').getAttribute('content') + 'filename ');
                 var currentRequest= new XMLHttpRequest();
-                var apiURL= "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=cfb50cc654c2297a74afd727ffbac9e0";
+                //var apiURL= "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=cfb50cc654c2297a74afd727ffbac9e0";
                 //-- preston 5604473
                 //-- london 2643743
+                var apiURL= "https://api.openweathermap.org/data/2.5/weather?zip=83549&units=imperial&APPID=cfb50cc654c2297a74afd727ffbac9e0";
 
                 currentRequest.open("GET",apiURL,true);
                 currentRequest.responseType= "text";
